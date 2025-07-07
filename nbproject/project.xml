@@ -4,7 +4,11 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
             <name>Unidad-4-poo-Pedro-Alfonso-Meza-Gonzalez</name>
-            <source-roots/>
+
+            <source-roots>
+                <root id="src.src.dir"/>
+            </source-roots>
+
             <test-roots/>
         </data>
     </configuration>
