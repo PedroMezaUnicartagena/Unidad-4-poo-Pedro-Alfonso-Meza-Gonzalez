@@ -9,20 +9,21 @@ package Taller1.Ejercicios.Ejercicio2;
  * @author HP
  */
 public class CuentaBancaria {
+
     private String numeroCuenta;
     private double saldo;
     private String tipoCuenta;
 
-    public CuentaBancaria(){ 
-            numeroCuenta="0";
-            saldo=0;
-            tipoCuenta="Cuenta por defecto";
+    public CuentaBancaria() {
+        numeroCuenta = "0";
+        saldo = 0;
+        tipoCuenta = "Cuenta por defecto";
     }
 
     public CuentaBancaria(String numeroCuenta, String tipoCuenta) {
         this.numeroCuenta = numeroCuenta;
         this.tipoCuenta = tipoCuenta;
-        this.saldo=0;
+        this.saldo = 0;
     }
 
     public CuentaBancaria(String numeroCuenta, double saldo, String tipoCuenta) {
@@ -54,5 +55,10 @@ public class CuentaBancaria {
     public void setTipoCuenta(String tipoCuenta) {
         this.tipoCuenta = tipoCuenta;
     }
-    
+
+    @Override
+    public String toString() {
+        return "CuentaBancaria{" + "numeroCuenta=" + numeroCuenta + ", saldo=" + saldo + ", tipoCuenta=" + tipoCuenta + '}';
+    }
+
 }

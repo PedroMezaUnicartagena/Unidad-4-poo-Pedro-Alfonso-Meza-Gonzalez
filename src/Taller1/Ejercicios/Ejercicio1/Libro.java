@@ -9,14 +9,15 @@ package Taller1.Ejercicios.Ejercicio1;
  * @author HP
  */
 public class Libro {
+
     private String titulo;
     private String autor;
     private int numeroPaginas;
 
     public Libro() {
-            titulo="sin titulo";
-            autor="sin autor";
-            numeroPaginas=0;
+        titulo = "sin titulo";
+        autor = "sin autor";
+        numeroPaginas = 0;
     }
 
     public Libro(String titulo, String autor, int numeroPaginas) {
@@ -48,12 +49,18 @@ public class Libro {
     public void setNumeroPaginas(int numeroPaginas) {
         this.numeroPaginas = numeroPaginas;
     }
-    
-    public void mostrarDetalles(){
+
+    public void mostrarDetalles() {
         System.out.println("Detalles del libro:");
-        System.out.println("Titulo: "+this.titulo);        
-        System.out.println("Autor: "+this.autor);
-        System.out.println("Numero de paginas: "+this.numeroPaginas);
+        System.out.println("Titulo: " + this.titulo);
+        System.out.println("Autor: " + this.autor);
+        System.out.println("Numero de paginas: " + this.numeroPaginas);
 
     }
+
+    @Override
+    public String toString() {
+        return "Libro{" + "titulo=" + titulo + ", autor=" + autor + ", numeroPaginas=" + numeroPaginas + '}';
+    }
+
 }
