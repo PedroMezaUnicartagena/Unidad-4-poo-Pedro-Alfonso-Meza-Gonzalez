@@ -1,0 +1,25 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package Taller13.Ejercicios.Ejercicio1;
+
+/**
+ *
+ * @author HP
+ */
+public class Prueba {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Triangulo triangulo = new Triangulo(50, 20);
+        Rectangulo rectangulo = new Rectangulo(30, 10);
+        
+        System.out.println("El area del Rectangulo es  "+rectangulo.calcularArea());        
+        System.out.println("El area del Triangulo es  "+triangulo.calcularArea());
+
+    }
+
+}
